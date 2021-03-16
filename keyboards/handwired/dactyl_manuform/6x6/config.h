@@ -26,15 +26,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key matrix size */
 // Rows are doubled-up
-#define MATRIX_ROWS 14
+#define MATRIX_ROWS 12
 #define MATRIX_COLS 6
 
 // wiring of each half
-#define MATRIX_COL_PINS { 33, 34, 35, 36, 37, 38 }
-#define MATRIX_ROW_PINS { 32, 31, 30, 29, 28, 27 }
+#define MATRIX_COL_PINS { 25, 26, 27, 28, 29, 30 }
+#define MATRIX_ROW_PINS { 22, 21, 19, 18, 17, 16 }
 
 #define DIODE_DIRECTION COL2ROW
 
 // WS2812 RGB LED strip input and number of LEDs
-#define RGB_DI_PIN D3
-#define RGBLED_NUM 12
+//#define RGB_DI_PIN D3
+//#define RGBLED_NUM 12
+
+#define PAL_USE_WAIT TRUE
+#define CH_CFG_ST_TIMEDELTA 0

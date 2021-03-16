@@ -21,3 +21,6 @@ SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
 
 # Bootloader selection
 BOOTLOADER = stm32duino
+
+MCU = STM32F103
+#MCU = cortex-m0plus
