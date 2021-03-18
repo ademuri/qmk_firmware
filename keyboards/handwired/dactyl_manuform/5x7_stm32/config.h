@@ -22,14 +22,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0001
 #define PRODUCT Dactyl-Manuform (5x7)
 
-#define MATRIX_ROWS 6
-// #define MATRIX_ROWS_PER_SIDE (MATRIX_ROWS / 2)
+#define MATRIX_ROWS 12
+#define MATRIX_ROWS_PER_SIDE (MATRIX_ROWS / 2)
 #define MATRIX_COLS 6
 
-//#define MATRIX_COL_PINS { 25, 26, 27, 28, 29, 30 }
 #define MATRIX_ROW_PINS {B12, B13, B14, B15, A8, A9}
-//#define MATRIX_ROW_PINS { 22, 21, 19, 18, 17, 16 }
 #define MATRIX_COL_PINS {B11, B10, B1, B0, A7, A6}
+
+#define MATRIX_ROW_PINS_RIGHT {B12, B13, B14, B15, A8, A9}
+#define MATRIX_COL_PINS_RIGHT {B11, B10, B1, B0, A7, A6}
 
 #define DIODE_DIRECTION COL2ROW
 

@@ -1,8 +1,6 @@
 # MCU name
 MCU = STM32F103
 BOOTLOADER = stm32duino
-# MCU_LDSCRIPT = stm32f103_bootloader
-#BOARD = ST_NUCLEO64_F103RB
 
 CFLAGS += "-Wno-error=deprecated"
 # EXTRAFLAGS = -O0 -g
@@ -16,7 +14,7 @@ SLEEP_LED_ENABLE = no  # Breathing sleep LED during USB suspend
 NKRO_ENABLE = yes	    # USB Nkey Rollover
 CUSTOM_MATRIX = no # Custom matrix file
 NKRO_ENABLE      = yes # USB Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
-UNICODE_ENABLE   = yes # Unicode
+UNICODE_ENABLE   = no # Unicode
 
 # Enter lower-power sleep mode when on the ChibiOS idle thread
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
