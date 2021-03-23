@@ -26,23 +26,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS_PER_SIDE (MATRIX_ROWS / 2)
 #define MATRIX_COLS 6
 
-#define MATRIX_ROW_PINS {B12, B13, B14, B15, A8, A9}
-#define MATRIX_COL_PINS {B11, B10, B1, B0, A7, A6}
+#define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
+#define MATRIX_ROW_PINS { F5, F6, F7, B1, B3, B2 }
 
-#define MATRIX_ROW_PINS_RIGHT {B12, B13, B14, B15, A8, A9}
-#define MATRIX_COL_PINS_RIGHT {B11, B10, B1, B0, A7, A6}
+//#define MATRIX_ROW_PINS_RIGHT {B12, B13, B14, B15, A8, A9}
+//#define MATRIX_COL_PINS_RIGHT {B11, B10, B1, B0, A7, A6}
 
 #define DIODE_DIRECTION COL2ROW
 
-// i2c_master driver config
-// #define I2C1_CLOCK_SPEED 400000
-// #define I2C1_DUTY_CYCLE FAST_DUTY_CYCLE_2
-
-//#define PAL_USE_WAIT TRUE
-
-#undef SOFT_SERIAL_PIN
-#define SOFT_SERIAL_PIN B6  // USART TX pin
+//#undef SOFT_SERIAL_PIN
+//#define SOFT_SERIAL_PIN B6  // USART TX pin
 #define SELECT_SOFT_SERIAL_SPEED 1
-#define SERIAL_USART_DRIVER SD1 // USART driver of TX pin. default: SD1
-#define SERIAL_USART_TX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
-#define SERIAL_USART_TIMEOUT 100 // USART driver timeout. default 100

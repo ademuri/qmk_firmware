@@ -4,7 +4,6 @@
 #include "action_layer.h"
 #include <stdint.h>
 #include <stdbool.h>
-#include <hal.h>
 
 // TODO: tune these
 // #define I2C_ADDR 0b01000000
