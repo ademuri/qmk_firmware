@@ -1,6 +1,6 @@
 # MCU name
-MCU = STM32F103
-BOOTLOADER = stm32duino
+MCU = atmega32u4
+BOOTLOADER = caterina
 
 CFLAGS += "-Wno-error=deprecated"
 # EXTRAFLAGS = -O0 -g
