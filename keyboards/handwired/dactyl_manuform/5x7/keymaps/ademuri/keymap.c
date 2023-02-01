@@ -3,6 +3,7 @@
 
 #define _QWERTY 0
 #define _FUNCTION 1
+#define _GAME 2
 
 #define FN_TAB LT(_FUNCTION, KC_TAB)
 #define FN_ENT LT(_FUNCTION, KC_ENTER)
@@ -13,11 +14,11 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_QWERTY] = LAYOUT_5x7(
-     KC_ESC , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  , KC_6  ,         KC_7  , KC_8  , KC_9  , KC_0  ,KC_MINS,KC_EQL ,      KC_HOME,
-      COPY  , KC_Q  , KC_W  , KC_E  , KC_R  , KC_T  ,KC_ESC ,        KC_QUOT, KC_Y  , KC_U  , KC_I  , KC_O  , KC_P  , KC_BACKSLASH,
-      PASTE , KC_A  , KC_S  , KC_D  , KC_F  , KC_G  ,KC_LBRC,        KC_RBRC, KC_H  , KC_J  , KC_K  , KC_L  ,KC_SCLN,      KC_PGUP,
-     KC_DEL , KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,                         KC_N  , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH,      KC_PGDN,
-     KC_TAB ,KC_GRV ,KC_PGDN,KC_PGUP,                                                         KC_TAB,_______,_______,       KC_END,
+     KC_ESC , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  , KC_6  ,         KC_7  , KC_8  , KC_9  , KC_0  ,  KC_MINS,KC_EQL ,      KC_HOME,
+      COPY  , KC_Q  , KC_W  , KC_E  , KC_R  , KC_T  ,KC_ESC ,        KC_QUOT, KC_Y  , KC_U  , KC_I  ,   KC_O  , KC_P  , KC_BACKSLASH,
+      PASTE , KC_A  , KC_S  , KC_D  , KC_F  , KC_G  ,KC_LBRC,        KC_RBRC, KC_H  , KC_J  , KC_K  ,   KC_L  ,KC_SCLN,      KC_PGUP,
+     KC_DEL , KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,                         KC_N  , KC_M  ,KC_COMM,  KC_DOT ,KC_SLSH,      KC_PGDN,
+     KC_TAB ,KC_GRV ,KC_PGDN,KC_PGUP,                                                         KC_TAB,TG(_GAME),_______,       KC_END,
                                      KC_LGUI,ESC_CTL,KC_LALT,        KC_BSPC, KC_SPC,KC_RCTL,
                                              KC_LSFT, FN_TAB,         FN_ENT, KC_RSFT
   ),
@@ -30,6 +31,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      _______,_______,KC_END ,KC_HOME,                                                        _______,_______,_______,  _______,
                                      _______,_______,_______,        KC_DEL ,_______,_______,
                                              _______,_______,        _______,_______
+  ),
+
+  [_GAME] = LAYOUT_5x7(
+     _______,_______,_______,_______,_______,_______,_______,         _______,_______,_______,_______,_______,_______,_______,
+     _______,_______,_______,_______,_______,_______,_______,         _______,_______,_______,_______,_______,_______,_______,
+     _______,_______,_______,_______,_______,_______,_______,         _______,_______,_______,_______,_______,_______,_______,
+     _______,_______,_______,_______,_______,_______,                         _______,_______,_______,_______,_______,_______,
+     _______,_______,_______,_______,                                                         _______,_______,_______,_______,
+                                      KC_TAB, KC_SPC,_______,         _______,_______,_______,
+                                             _______,_______,         _______,_______
   ),
 
 /*
